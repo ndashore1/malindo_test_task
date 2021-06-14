@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://apilayer.net/api/check?access_key=5a2a8586065cd0273cd88f04a76fb9f4&email=support@apilayer.com&smtp=1
+    uri: https://apilayer.net/api/check?access_key=API_KEY&email=support@apilayer.com&smtp=1
     body:
       encoding: US-ASCII
       string: ''

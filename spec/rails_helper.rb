@@ -54,3 +54,11 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   config.debug_logger = File.open('vcr.log', 'w')
 end
+
+# Shoula matcher configuration
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework(:rspec)
+    with.library(:rails)
+  end
+end

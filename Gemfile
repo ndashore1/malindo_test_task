@@ -60,6 +60,7 @@ group :test do
   gem 'rspec-rails'
   gem 'vcr', '~> 3.0', '>= 3.0.1'
   gem 'webmock'
+  gem 'shoulda-matchers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
