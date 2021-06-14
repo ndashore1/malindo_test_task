@@ -2,6 +2,6 @@
 
 # Initializes the MailBoxLayer API configuration.
 Apilayer::Mailbox.configure do |configs|
-  configs.access_key = 'API_KEY'
+  configs.access_key = ENV['API_KEY']
   configs.https = true
 end
