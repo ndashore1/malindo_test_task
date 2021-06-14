@@ -16,7 +16,7 @@ class EmailGenerator
       "#{first_name}#{last_name}",
       "#{last_name}.#{first_name}",
       "#{first_name&.chr}.#{last_name}",
-      "#{first_name&.chr}#{last_name&.chr}",
+      "#{first_name&.chr}#{last_name&.chr}"
     ]
     prefixes.map { |prefix| "#{prefix}@#{url}".downcase.remove_whitespaces }
   end

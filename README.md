@@ -2,6 +2,8 @@
 ## Dependencies
 * Ruby version : 3.0.0
 * Rails Version : 6.1.3.2
+* Node version : v15.12.0
+* Yarn version : 1.22.10
 ## Configuration
 ```gem install bundler && bundle install```
 ```yarn install```

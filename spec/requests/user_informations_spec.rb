@@ -22,7 +22,7 @@ RSpec.describe('Records', type: :request) do
              params: {
                user_information: {
                  first_name: 'john', last_name: 'doe', url: '8returns.com'
-               },
+               }
              }
       end
 
@@ -39,7 +39,7 @@ RSpec.describe('Records', type: :request) do
              params: {
                user_information: {
                  first_name: 'john', last_name: 'doe', url: '@returns.com'
-               },
+               }
              }
       end
 

@@ -25,7 +25,7 @@ class EmailFinder < ApplicationService
     user_information = UserInformation.find_or_initialize_by(
       first_name: first_name,
       last_name: last_name,
-      url: url,
+      url: url
     )
     return user_information if user_information.persisted? || user_information.invalid?
 
@@ -40,8 +40,8 @@ class EmailFinder < ApplicationService
   #
   # @return [String, NilClass]
   def search_email
-    email = EmailGenerator.call(first_name, last_name, url).each do |email|
-      break email if EmailValidator.valid?(email)
+    email = EmailGenerator.call(first_name, last_name, url).each do |custom_email|
+      break custom_email if EmailValidator.valid?(custom_email)
     end
     email if email.is_a?(String)
   end
