@@ -1,0 +1,12 @@
+= form_for UserInformation.new, url: search_path do |form|
+  .mb-5
+    = form.label :first_name, t('.first_name')
+    = form.text_field :first_name, class: 'form-control form-control-lg', placeholder: 'john', required: true
+  .mb-5
+    = form.label :last_name, t('.last_name')
+    = form.text_field :last_name, class: 'form-control form-control-lg', placeholder: 'doe', required: true
+  .mb-5
+    = form.label :url, t('.url')
+    = form.text_field :url, class: 'form-control form-control-lg', placeholder: 'example.com', required: true
+  .d-grid.mt-5
+    = form.submit t('.search'), class: 'btn btn-lg text-center submit-button'

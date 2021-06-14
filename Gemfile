@@ -33,9 +33,16 @@ gem 'rexml'
 # Connect to mailboxlayer.com to verify email addresses.
 gem 'mailboxlayer'
 
+# yard documentation generation tool
+gem 'yard', '~> 0.9.26'
+
+# templating engine HAML
+gem 'haml-rails', '~> 2.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rubocop-rails', require: false
 end
 
 group :development do
@@ -61,6 +68,7 @@ group :test do
   gem 'vcr', '~> 3.0', '>= 3.0.1'
   gem 'webmock'
   gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

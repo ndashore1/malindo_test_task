@@ -6,3 +6,11 @@ en:
           attributes:
             email:
               not_found: Not found.
+  user_informations:
+    index:
+      email_validator: Email Validator
+    form:
+      first_name: First Name
+      last_name: Last Name
+      url: URL
+      search: Search

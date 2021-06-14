@@ -1,0 +1,6 @@
+.results
+  %h5 Result
+  - if user_information.present?
+    .fw-bolder
+      %span.text-start= user_information.email
+      %span.text-center="(#{user_information.full_name})"

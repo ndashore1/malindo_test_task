@@ -1,0 +1,57 @@
+:root {
+ --color-green: #37af65;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+h1 {
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  font-weight: 1rem;
+}
+
+h5 {
+  margin-top: 2.5rem;
+}
+
+form {
+  border-radius: 0.25rem;
+  padding: 2.5rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 720px;
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  border-radius: 0.25rem;
+}
+
+.results {
+  margin-left: 3rem;
+}
