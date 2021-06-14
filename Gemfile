@@ -30,6 +30,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'rexml'
 
+# Connect to mailboxlayer.com to verify email addresses.
+gem 'mailboxlayer'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -55,6 +58,8 @@ group :test do
   gem 'database_cleaner', require: false
   gem 'factory_bot_rails'
   gem 'rspec-rails'
+  gem 'vcr', '~> 3.0', '>= 3.0.1'
+  gem 'webmock'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

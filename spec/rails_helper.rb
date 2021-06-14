@@ -45,3 +45,12 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 end
+
+# VCR configuration.
+VCR.configure do |config|
+  config.allow_http_connections_when_no_cassette = true
+  config.cassette_library_dir = "#{::Rails.root}/spec/cassettes"
+  config.hook_into(:webmock)
+  config.configure_rspec_metadata!
+  config.debug_logger = File.open('vcr.log', 'w')
+end
