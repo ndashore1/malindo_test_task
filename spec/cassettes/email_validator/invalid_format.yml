@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apilayer.net/api/check?access_key=API_KEY&email=saaexample@.com&smtp=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Jun 2021 15:30:21 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      X-Rate-Limit:
+      - '1'
+      X-Rate-Limit-Remaining:
+      - '0'
+      X-Rate-Limit-Reset:
+      - '1623684622'
+      X-Apilayer-Transaction-Id:
+      - 84b6c8f4-cd79-461a-8eb0-b02d162d66fd
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.026'
+    body:
+      encoding: UTF-8
+      string: '{"email":"saaexample@.com","did_you_mean":"","user":"saaexample","domain":".com","format_valid":false,"mx_found":null,"smtp_check":false,"catch_all":null,"role":false,"disposable":false,"free":false,"score":0.64}'
+    http_version: 
+  recorded_at: Mon, 14 Jun 2021 15:30:21 GMT
+recorded_with: VCR 3.0.3

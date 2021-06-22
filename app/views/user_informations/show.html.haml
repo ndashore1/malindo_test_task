@@ -1,0 +1,7 @@
+.container
+  %header
+    = render 'shared/messages'
+    %h1.text-center= t('.email_validator')
+  = render 'form'
+  - if params.include?(:user_information_id)
+    = render partial: 'results', locals: { user_information: @user_information }

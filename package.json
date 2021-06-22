@@ -1,5 +1,5 @@
 {
-  "name": "malindo-test-task",
+  "name": "malindo-test",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",

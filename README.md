@@ -1,24 +1,35 @@
-# README
+# Malindo Task
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dependencies
+* Ruby version : 3.0.0
+* Rails Version : 6.1.3.2
+* Node version : v15.12.0
+* Yarn version : 1.22.10
 
-Things you may want to cover:
+## Configuration
+```gem install bundler && bundle install```
+```yarn install```
 
-* Ruby version
+## Setup and Start the Applicaton
 
-* System dependencies
+## Prerequisite
+1. Set the Mailbox API key using command.
+`export API_KEY=Your_API_Key`
 
-* Configuration
+### Database Setup
+```rake db:create && rake db:migrate```
 
-* Database creation
+### Run the rails server
+```rails s```
 
-* Database initialization
+## Test Environment Setup
 
-* How to run the test suite
+### Test Database Setup
+```RAILS_ENV=test rake db:create && RAILS_ENV=test rake db:migrate```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Run the Test Suit
+```rspec```
 
-* Deployment instructions
-
-* ...
+## How to use?
+1. Once rails server is started, search with the information(ie. user name & url).
+2. It will return valid email based on information provided in search form using MailBox API.
